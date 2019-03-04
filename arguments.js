@@ -11,7 +11,14 @@ console.log(result);
 
 let scoreTotext = function (name = 'Anonymous', score = 0){
 
-    return "Name: " + name + " - Score: " + score;
+    // using a template string method
+
+    return (`Name: ${name} - Score ${score}`)
+
+    
+    // normal string concetion way.
+    
+   // return "Name: " + name + " - Score: " + score;
 
 }
 //default values are used when we provide no arguments to the function
@@ -30,7 +37,8 @@ console.log(user2);
 let tipPercent = function(bill, tipRatio = .2){
 
     let totalTip = bill * tipRatio ;
-    return totalTip ;
+    
+    return (`A ${tipRatio*100}% tip  on ${bill} would be $${totalTip}`);
 
 }
 let tip = tipPercent(1000, 0.05);
