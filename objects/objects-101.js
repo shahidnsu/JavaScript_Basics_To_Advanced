@@ -1,16 +1,16 @@
 let myBook = {
-    title : '1984',
-    author : 'George Orwell',
-    pageCount : 326
+    title: '1984',
+    author: 'George Orwell',
+    pageCount: 326
 }
 
-console.log(`${myBook.title} by ${myBook.author}` );
+console.log(`${myBook.title} by ${myBook.author}`);
 
 //setting a new value to object
 
 myBook.title = 'Animal Farmer';
 
-console.log(`${myBook.title} by ${myBook.author}` );
+console.log(`${myBook.title} by ${myBook.author}`);
 
 //challenge Area
 
@@ -18,9 +18,9 @@ console.log(`${myBook.title} by ${myBook.author}` );
 // Andrew is 27 and lives in philadelphia
 
 let personDeatils = {
-    name : 'Shahid khan',
-    age  : 27,
-    location : 'Ashugonj'
+    name: 'Shahid khan',
+    age: 27,
+    location: 'Ashugonj'
 }
 
 console.log(`${personDeatils.name} is ${personDeatils.age} and lives in ${personDeatils.location}.`)
