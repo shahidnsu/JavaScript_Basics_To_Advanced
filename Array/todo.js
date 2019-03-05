@@ -39,13 +39,22 @@ const todoitems =[
 },
 {
        text : 'Sing a song',
-       compeleted :false
+       compeleted : false
 
 } ,
 {
       text : 'Eat launch',
       compeleted: true
-}
+}, 
+{
+      text : 'Eat dinner',
+      compeleted : false
+
+},
+     {
+         text : 'Watch UCl',
+         compeleted: true
+     }
 
 
 ]
@@ -63,5 +72,32 @@ const deleteToDo = function(todos, text){
     }
     
 }
-const name = deleteToDo(todoitems,'Eat launch');
+//const name = deleteToDo(todoitems,'Eat launch');
+//console.log(todoitems);
+
+
+// using of filter method in array of objects
+
+/*const thingsToDone = function(todoArray){
+    return todoArray.filter(function (todo,index){
+        return todo.compeleted === false;
+        
+
+    })
+}
+console.log(thingsToDone(todoitems));
+*/
+
+const sortedtodos = function(todos){
+    todos.sort(function (a,b){
+        if(a.compeleted === b.compeleted){
+            return -1
+        }
+        else if (a.compeleted != b.compeleted){
+            return 0
+        }
+    })
+}
+
+sortedtodos(todoitems)
 console.log(todoitems);
